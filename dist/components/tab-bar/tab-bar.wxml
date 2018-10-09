@@ -1,0 +1,23 @@
+<view class="lp-tabbar-container {{ fixed ? 'lp-tabbar-fixed' : ''}}">
+  
+  <!-- 子组件开始
+    <view style="width: {{ 100 / 4 }}%; text-align: center;">
+      english
+    </view>
+    <view style="width: {{ 100 / 4 }}%; text-align: center;">
+      chinese
+    </view>
+    <view style="width: {{ 100 / 4 }}%; text-align: center;">
+      and
+    </view>
+    <view style="width: {{ 100 / 4 }}%; text-align: center;">
+      soon
+    </view>
+  子组件结束 -->
+
+  <slot></slot>
+
+  <view class="lp-tabbar-item-list">
+    <view class="lp-tabbar-item-layer" wx:for="{{ tabbarItemList }}" wx:key="item.name" data-name="{{ item.name }}" style="width: {{ 100 / tabbarItemList.length }}%;" bindtap="clickItem"></view>
+  </view>
+</view>

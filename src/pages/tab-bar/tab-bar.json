@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "lp-tab-bar": "../../components/tab-bar/tab-bar",
+    "lp-tabbar-item": "../../components/tab-bar-item/tab-bar-item"
+  }
+}

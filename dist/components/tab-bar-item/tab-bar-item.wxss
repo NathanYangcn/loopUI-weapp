@@ -1,0 +1,24 @@
+.lp-tabbar-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  font-size: 24rpx;
+  text-align: center; }
+
+.lp-tabbar-item-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 34px;
+  height: 34px; }
+  .lp-tabbar-item-icon > image {
+    width: 70%;
+    height: 70%; }
+
+.lp-tabbar-item-title {
+  height: 16px;
+  font-weight: blod;
+  line-height: 12px; }

@@ -1,12 +1,11 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/tab-bar/tab-bar"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "loopUI-weapp",
     "navigationBarTextStyle":"black"
   }
 }
