@@ -54,10 +54,25 @@ Component({
         nodes[i].isUnselectedColor(this.data.color);
         nodes[i].isSelectedColor(this.data.selectedColor);
         nodes[i].isBackground(this.data.background);
-        itemList.push({
-          name: nodes[i].data.name
-        });
+
+        if (nodes[i].data.appid) {
+          itemList.push({
+            tomini: false,
+            name: nodes[i].data.name,
+            appid: nodes[i].data.appid,
+            path: nodes[i].data.path,
+            extradata: nodes[i].data.extradata,
+            version: nodes[i].data.version
+          });
+        } else {
+          itemList.push({
+            tomini: true,
+            name: nodes[i].data.name
+          });
+        }
       }
+
+      console.log(itemList);
 
       this.setData({
         tabbarItemList: itemList

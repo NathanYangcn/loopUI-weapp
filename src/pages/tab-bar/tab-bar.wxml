@@ -1,7 +1,7 @@
 <view class="container">  
   <lp-tab-bar color="green" selectedColor="red" selected="{{selected}}" fixed bindchange="changeHandle">
     <lp-tabbar-item name="1" icon="success" selectedIcon="search" title="selectedIcon"></lp-tabbar-item>
-    <lp-tabbar-item name="2" icon="waiting" selectedIcon="download" title="2"></lp-tabbar-item>
+    <lp-tabbar-item name="2" appid="wxAppId" icon="waiting" selectedIcon="download" title="2"></lp-tabbar-item>
     <lp-tabbar-item name="3" src="../../images/1.png" selectedSrc="../../images/2.png" title="3"></lp-tabbar-item>
     <lp-tabbar-item name="4" icon="success_no_circle" selectedIcon="clear" title="4"></lp-tabbar-item>
   </lp-tab-bar>

@@ -32,6 +32,22 @@ Component({
     },
     title: {
       type: String
+    },
+    appid: {
+      type: String,
+      value: ''
+    },
+    path: {
+      type: String,
+      value: ''
+    },
+    extradata: {
+      type: Object,
+      value: {}
+    },
+    version: {
+      type: String,
+      value: 'release'
     }
   },
   data: {
