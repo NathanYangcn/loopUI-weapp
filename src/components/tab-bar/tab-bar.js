@@ -70,8 +70,6 @@ Component({
         }        
       }
 
-      console.log(itemList)
-
       this.setData({
         tabbarItemList: itemList
       })
@@ -84,6 +82,22 @@ Component({
 
     emitEvent (name) {
       this.triggerEvent('change', { name });
+    },
+
+
+    emitFail (e) {
+      const name = e.currentTarget.dataset.name
+      this.triggerEvent('fail', name);
+    },
+
+    emitSuccess (e) {
+      const name = e.currentTarget.dataset.name
+      this.triggerEvent('success', name);
+    },
+
+    emitComplete (e) {
+      const name = e.currentTarget.dataset.name
+      this.triggerEvent('complete', name);
     }
   }
 })

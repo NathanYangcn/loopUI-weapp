@@ -20,7 +20,7 @@
   <view class="lp-tabbar-item-list">
     <block wx:for="{{ tabbarItemList }}" wx:key="item.name">
       <view wx:if="{{item.tomini}}" class="lp-tabbar-item-layer" data-name="{{ item.name }}" style="width: {{ 100 / tabbarItemList.length }}%;" bindtap="clickItem"></view>
-      <navigator wx:else target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extradata}}" version="{{item.version}}" class="lp-tabbar-item-layer" data-name="{{ item.name }}" style="width: {{ 100 / tabbarItemList.length }}%;" bindtap="clickItem"></navigator>      
+      <navigator wx:else target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extradata}}" version="{{item.version}}" class="lp-tabbar-item-layer" data-name="{{ item.name }}" style="width: {{ 100 / tabbarItemList.length }}%;" bindtap="clickItem" bindfail="emitFail" bindsuccess="emitSuccess" bindcomplete="emitComplete"></navigator>
     </block>
   </view>
 </view>
