@@ -1,3 +1,5 @@
+var app = getApp()
+
 Component({
   relations: {
     '../tab-bar-item/tab-bar-item': {
@@ -39,7 +41,8 @@ Component({
   },
 
   data: {
-    tabbarItemList: []
+    tabbarItemList: [],
+    isIphoneX: app.globalData.isIphoneX
   },
 
   methods: {
