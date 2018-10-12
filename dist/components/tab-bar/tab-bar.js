@@ -56,7 +56,6 @@ Component({
         nodes[i].isSelected(nodes[i].data.name === this.data.selected);
         nodes[i].isUnselectedColor(this.data.color);
         nodes[i].isSelectedColor(this.data.selectedColor);
-        nodes[i].isBackground(this.data.background);
 
         if (nodes[i].data.appid) {
           itemList.push({

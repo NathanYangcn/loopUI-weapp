@@ -53,8 +53,7 @@ Component({
       for (let i = 0; i < nodes.length; i++) {             
         nodes[i].isSelected(nodes[i].data.name === this.data.selected)     
         nodes[i].isUnselectedColor(this.data.color)
-        nodes[i].isSelectedColor(this.data.selectedColor)      
-        nodes[i].isBackground(this.data.background)
+        nodes[i].isSelectedColor(this.data.selectedColor)          
 
         if (nodes[i].data.appid)   {
           itemList.push({

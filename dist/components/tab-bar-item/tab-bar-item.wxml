@@ -1,6 +1,6 @@
 <view class="lp-tabbar-item-container" style="background: {{background}};">
   <view class="lp-tabbar-item-icon">
-    <!-- 首先判断使用种类icon/image, 其次判断选中状态 -->
+    <!-- 首先判断种类icon/image, 其次判断选中状态 -->
     <icon wx:if="{{icon || selectedIcon}}" type="{{selected ? selectedIcon : icon}}" size="{{size}}" color="{{selected ? selectedColor : unselectedColor}}" />
     <image wx:else src="{{selected ? selectedSrc : src}}" />
   </view>

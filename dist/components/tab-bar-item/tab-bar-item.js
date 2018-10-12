@@ -53,8 +53,7 @@ Component({
   data: {
     selected: false,
     selectedColor: '',
-    unselectedColor: '',
-    background: ''
+    unselectedColor: ''
   },
   methods: {
     isSelected: function isSelected(selected) {
@@ -70,11 +69,6 @@ Component({
     isUnselectedColor: function isUnselectedColor(color) {
       this.setData({
         unselectedColor: color
-      });
-    },
-    isBackground: function isBackground(color) {
-      this.setData({
-        background: color
       });
     }
   }

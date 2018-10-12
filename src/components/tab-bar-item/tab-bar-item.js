@@ -51,8 +51,7 @@ Component({
   data: {   
     selected: false,
     selectedColor: '',
-    unselectedColor: '',
-    background: ''
+    unselectedColor: ''
   },
   methods: {   
     isSelected (selected) {
@@ -68,11 +67,6 @@ Component({
     isUnselectedColor (color) {
       this.setData({
         unselectedColor: color
-      })
-    },
-    isBackground (color) {
-      this.setData({
-        background: color
       })
     }
     // 该语句的作用与 tab-bar.js 中的语句相同，此处无用，因为已经调整 z-index 的关系进行覆盖 

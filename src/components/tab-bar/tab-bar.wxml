@@ -1,4 +1,4 @@
-<view class="lp-tabbar-container {{ fixed ? 'lp-tabbar-fixed' : ''}} {{ isIphoneX ? 'lp-iphone-bottom' : ''}}">
+<view class="lp-tabbar-container {{ fixed ? 'lp-tabbar-fixed' : ''}} {{ isIphoneX ? 'lp-iphonex-bottom' : ''}}" style="background: {{background}}">
   
   <!-- 子组件开始
     <view style="width: {{ 100 / 4 }}%; text-align: center;">

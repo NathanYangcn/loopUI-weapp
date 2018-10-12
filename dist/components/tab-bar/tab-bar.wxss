@@ -43,6 +43,6 @@
   bottom: 0;
   z-index: 2; }
 
-.lp-iphone-bottom {
+.lp-iphonex-bottom {
   padding-bottom: 34px;
   height: 84px; }
