@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "lp-toast": "../../components/toast/toast"
+  }
+}

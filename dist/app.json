@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/tab-bar/tab-bar"
+    "pages/tab-bar/tab-bar",
+    "pages/toast/toast"
   ],
   "window":{
     "backgroundTextStyle":"light",

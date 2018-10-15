@@ -1,0 +1,11 @@
+<view class="lp-toast-container" wx:if="{{show}}">
+  <view class="lp-toast-mask" bindtap="closeToast"></view>      
+  <view class="lp-toast-content">
+    <view class="lp-toast-icon">
+      <icon type="success" size="40" color="green" />
+    </view>
+    <view class="lp-toast-text">
+      toast
+    </view>
+  </view>
+</view>
