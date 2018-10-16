@@ -1,4 +1,4 @@
 <view>
   <button type="default" size="defaultSize" bindtap="tapname">Button</button>
-  <lp-toast show="{{toast.show}}"></lp-toast>
+  <lp-toast id="toast"></lp-toast>
 </view>

@@ -2,21 +2,14 @@ var app = getApp()
 
 Page({
   data: {
-    toast: {
-      show: false
-    }
+    
   },  
   tapname () {
-    var self = this
-    this.setData({
-      toast: {
-        show: true
-      }
-    })
-    setTimeout(function () {
-      self.setData({
-        toast: false
-      })
-    }, 3000)
-  }
+    // console.log(this.toast, 'here')
+    this.toast.showToast({text: 'loopUI', iconType: 'waiting', iconColor: 'green'})
+  },
+
+  onReady () {
+    this.toast = this.selectComponent("#toast")
+  },
 })
