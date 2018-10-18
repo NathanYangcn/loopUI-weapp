@@ -18,6 +18,14 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 10px;
   border-radius: 10px;
-  width: 200rpx;
-  height: 200rpx; }
+  min-width: 200rpx;
+  max-width: 70%;
+  min-height: 200rpx; }
+
+.lp-toast-text {
+  width: 100%;
+  word-wrap: break-word;
+  text-align: center; }

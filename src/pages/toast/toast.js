@@ -6,7 +6,7 @@ Page({
   },  
   tapname () {
     // console.log(this.toast, 'here')
-    this.toast.showToast({text: 'loopUI', iconType: 'waiting', iconColor: 'green'})
+    this.toast.showToast({text: 'loopUI-OP', iconType: 'waiting', maskLock: true})
   },
 
   onReady () {

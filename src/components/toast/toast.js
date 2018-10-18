@@ -4,17 +4,21 @@ Component({
 
     config: {
       text: 'hello',
+      color: '#fff',
+      fontSize: '15px',
+
       iconType: 'success',
       iconSize: 35,
       iconColor: '',
 
-      delay: true,
-      duration: 3,
+      background: 'rgba(0, 0, 0, .5)',
+      
       mask: true,
+      maskLock: false,
       maskBackground: 'rgba(0, 0, 0, .3)',
-      color: '#fff',
-      fontSize: '20px',
-      background: 'rgba(0, 0, 0, .5)'
+
+      delay: false,
+      duration: 3
     }
   },
 
@@ -28,9 +32,10 @@ Component({
       this.setData({
         config: config
       })
+      console.log(this.data.config)
     },
 
-    showToast (options) {                
+    showToast (options) {
       this.initToastData(options)
 
       this.setData({
@@ -52,6 +57,7 @@ Component({
     },
 
     hideToast () {
+      if (this.data.config.maskLock) return
       this.setData({
         show: false
       })

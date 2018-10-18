@@ -1,7 +1,7 @@
 <view class="lp-toast-container" wx:if="{{show}}">
   <view class="lp-toast-mask" wx:if="{{ config.mask }}" bindtap="hideToast" style="background: {{ config.maskBackground }}"></view>      
   <view class="lp-toast-content" style="background: {{ config.background }}">
-    <view class="lp-toast-icon">
+    <view class="lp-toast-icon">      
       <icon type="{{ config.iconType }}" size="{{ config.iconSize }}" color="{{ config.iconColor ?  config.iconColor : config.color }}" />
     </view>
     <view class="lp-toast-text" style="color: {{ config.color}}; font-size: {{ config.fontSize }}">
