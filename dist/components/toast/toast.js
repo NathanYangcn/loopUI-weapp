@@ -5,11 +5,13 @@ Component({
     show: false,
 
     config: {
-      text: 'hello',
-      color: '#fff',
-      fontSize: '15px',
+      type: 'defalt',
 
-      iconType: 'success',
+      text: 'hello',
+      textColor: '#fff',
+      textSize: '15px',
+
+      icon: 'success',
       iconSize: 35,
       iconColor: '',
 
@@ -20,19 +22,21 @@ Component({
       maskBackground: 'rgba(0, 0, 0, .3)',
 
       delay: false,
-      duration: 3
+      duration: 3,
+
+      loading: true
     }
   },
 
   methods: {
     initToastData: function initToastData(options) {
       var config = this.data.config;
+
       Object.assign(config, options);
 
       this.setData({
         config: config
       });
-      console.log(this.data.config);
     },
     showToast: function showToast(options) {
       this.initToastData(options);

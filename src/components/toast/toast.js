@@ -3,11 +3,13 @@ Component({
     show: false,
 
     config: {
-      text: 'hello',
-      color: '#fff',
-      fontSize: '15px',
+      type: 'defalt',
 
-      iconType: 'success',
+      text: 'hello',
+      textColor: '#fff',
+      textSize: '15px',
+
+      icon: 'success',
       iconSize: 35,
       iconColor: '',
 
@@ -18,7 +20,9 @@ Component({
       maskBackground: 'rgba(0, 0, 0, .3)',
 
       delay: false,
-      duration: 3
+      duration: 3,
+
+      loading: true
     }
   },
 
@@ -27,12 +31,23 @@ Component({
       // ... 展开运算符在这里报错，原因不知到，该方法也可以达到同样效果，代码量还少
       // assign 方法，能合并数据，但无法更换页面设置；但更换思路，先合并数据，后将整个数据进行替换即可，成功，仅仅是中间层转换
       var config = this.data.config
+
+      // switch(options.type){
+      //   case 'default':
+      //       config = {}
+      //       break;
+      //   case 'loading':
+      //       config = {}
+      //       break;
+      //   default:
+      //       statement;
+      // }
+
       Object.assign(config, options)
       // 有坑
       this.setData({
         config: config
       })
-      console.log(this.data.config)
     },
 
     showToast (options) {
